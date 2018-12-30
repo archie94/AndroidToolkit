@@ -1,1 +1,1 @@
-include ':app', ':network', ':ui'
+include ':app', ':network', ':ui', ':media'
