@@ -23,6 +23,7 @@ class RvAdapter<T : RecyclerView.ViewHolder>(private val vrList: List<RvViewRend
         vrMap[viewType]?.let {
 
         }
+        TODO()
     }
 
     override fun getItemCount(): Int = data.size
