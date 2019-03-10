@@ -1,0 +1,11 @@
+package prava.arka.com.ui
+
+/**
+ * Created by Arka Prava Basu <arkaprava94@gmail.com> on 6/2/19.
+ */
+interface IRvData {
+    /**
+     * The view type for this data
+     */
+    fun getType(): Int
+}
