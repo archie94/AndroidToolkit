@@ -9,8 +9,10 @@ class NetworkKit private constructor(private val server: String) {
 
     companion object {
         private var networkKit: NetworkKit? = null
+        internal lateinit var headers: Map<String, String>
 
-        fun initialize(server: String) {
+        fun initialize(server: String, headers: Map<String, String> = mapOf()) {
+            this.headers = headers
             networkKit = NetworkKit(server)
         }
 
