@@ -30,7 +30,7 @@ class RvAdapter<T : IRvData, VR: RvViewRenderer<in T>>(private val vrList: List<
     override fun getItemCount(): Int = data.size
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        vrMap[vrList[position].getRendererType()]?.onBind(holder, position, data[position])
+        vrMap[data[position].getType()]?.onBind(holder, position, data[position])
     }
 
     override fun getItemViewType(position: Int): Int {
