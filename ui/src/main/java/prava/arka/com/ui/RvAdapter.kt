@@ -7,7 +7,7 @@ import java.lang.RuntimeException
 /**
  * Created by Arka Prava Basu <arka.basu@zomato.com> on 17/12/18.
  */
-class RvAdapter<T : IRvData, VR: RvViewRenderer<in T>>(private val vrList: List<VR>)
+class RvAdapter<T : IRvData, VR: RvViewRenderer<in T>>(vrList: List<VR>)
     : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private val vrMap: HashMap<Int, VR> = HashMap()
