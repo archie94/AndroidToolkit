@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- From https://www.w3schools.com/colors/colors_names.asp -->
+    <color name="black">#000000</color>
+    <color name="grey">#808080</color>
+
+
+    <color name="border_grey_1">#AFAFAF</color>
+</resources>
