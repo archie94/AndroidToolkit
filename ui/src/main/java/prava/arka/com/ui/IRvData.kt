@@ -8,4 +8,9 @@ interface IRvData {
      * The view type for this data
      */
     fun getType(): Int
+
+    /**
+     * An id of the data
+     */
+    fun getId(): String
 }
