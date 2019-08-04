@@ -6,7 +6,7 @@ import androidx.annotation.DimenRes
 import androidx.annotation.StringRes
 
 /**
- * Created by Arka Prava Basu<arka@ixigo.com> on 2019-07-09
+ * Created by Arka Prava Basu<arkaprava94@gmail.com> on 2019-07-09
  **/
 interface ISharedPreferenceManager {
     fun getString(@StringRes id: Int): String

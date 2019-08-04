@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 /**
- * Created by Arka Prava Basu<arka@ixigo.com> on 2019-05-26
+ * Created by Arka Prava Basu<arkaprava94@gmail.com> on 2019-05-26
  **/
 
 fun getDateVerbose(epoch: Long, format: String): String {
