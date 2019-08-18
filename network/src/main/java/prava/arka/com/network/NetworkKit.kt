@@ -3,7 +3,7 @@ package prava.arka.com.network
 import java.lang.RuntimeException
 
 /**
- * Created by Arka Prava Basu <arka.basu@zomato.com> on 28/11/18.
+ * Created by Arka Prava Basu <arkaprava94@gmail.com> on 28/11/18.
  */
 class NetworkKit private constructor(private val server: String) {
 

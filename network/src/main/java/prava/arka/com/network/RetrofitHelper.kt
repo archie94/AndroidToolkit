@@ -6,7 +6,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 /**
- * Created by Arka Prava Basu <arka.basu@zomato.com> on 28/11/18.
+ * Created by Arka Prava Basu <arkaprava94@gmail.com> on 28/11/18.
  */
 class RetrofitHelper {
 
