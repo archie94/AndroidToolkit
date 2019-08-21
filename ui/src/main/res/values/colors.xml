@@ -5,6 +5,9 @@
     <color name="black">#000000</color>
     <color name="grey">#808080</color>
 
+    <color name="color_transparent">#00000000</color>
 
     <color name="border_grey_1">#AFAFAF</color>
+    <color name="color_light_grey_with_alpha">#4befefef</color>
+    <color name="color_text_grey">#5D5D67</color>
 </resources>

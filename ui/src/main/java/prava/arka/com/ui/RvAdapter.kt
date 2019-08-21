@@ -2,10 +2,9 @@ package prava.arka.com.ui
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import java.lang.RuntimeException
 
 /**
- * Created by Arka Prava Basu <arka.basu@zomato.com> on 17/12/18.
+ * Created by Arka Prava Basu <arkaprava94@gmail.com> on 17/12/18.
  */
 class RvAdapter<T : IRvData, VR: RvViewRenderer<in T>>(vrList: List<VR>)
     : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
