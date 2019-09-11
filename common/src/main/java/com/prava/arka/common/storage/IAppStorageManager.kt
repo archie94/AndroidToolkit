@@ -7,4 +7,8 @@ interface IAppStorageManager {
     fun <T> getAccessToken(): T
 
     fun <T> setAccessToken(accessToken: T)
+
+    fun <T> getUserId(): T
+
+    fun <T> setUserId(id: T)
 }
