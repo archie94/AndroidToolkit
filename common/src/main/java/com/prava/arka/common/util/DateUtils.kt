@@ -1,4 +1,4 @@
-package com.prava.arka.common
+package com.prava.arka.common.util
 
 import java.text.SimpleDateFormat
 import java.util.*
