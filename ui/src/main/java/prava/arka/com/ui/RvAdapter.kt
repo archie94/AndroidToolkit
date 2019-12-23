@@ -1,6 +1,7 @@
 package prava.arka.com.ui
 
 import android.view.ViewGroup
+import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.RecyclerView
 
 /**
@@ -11,7 +12,8 @@ class RvAdapter<T : IRvData, VR: RvViewRenderer<in T>>(vrList: List<VR>)
 
     private val vrMap: HashMap<Int, VR> = HashMap()
 
-    private val data: MutableList<T> = mutableListOf()
+    private val itemCallback = DiffUtilItemCallback<T>()
+    private val dataListAsyncListDiffer: AsyncListDiffer<T> = AsyncListDiffer(this, itemCallback)
 
     init {
         vrList.forEach {
@@ -26,23 +28,18 @@ class RvAdapter<T : IRvData, VR: RvViewRenderer<in T>>(vrList: List<VR>)
         throw RuntimeException("ViewRenderer not registered for this view type")
     }
 
-    override fun getItemCount(): Int = data.size
+    override fun getItemCount(): Int = dataListAsyncListDiffer.currentList.size
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        vrMap[data[position].getType()]?.onBind(holder, position, data[position])
+        val data = dataListAsyncListDiffer.currentList[position]
+        vrMap[data.getType()]?.onBind(holder, position, data)
     }
 
-    override fun getItemViewType(position: Int): Int {
-        return data[position].getType()
-    }
+    override fun getItemViewType(position: Int): Int = dataListAsyncListDiffer.currentList[position].getType()
 
     fun setData(list: List<T>) {
-        this.data.clear()
-        this.data.addAll(list)
-        notifyDataSetChanged()
-    }
-
-    fun addData(data: T, position: Int = this.data.size) {
-        this.data.add(position, data)
+        val newList = mutableListOf<T>()
+        newList.addAll(list)
+        dataListAsyncListDiffer.submitList(newList)
     }
 }

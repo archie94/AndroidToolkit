@@ -11,4 +11,10 @@ interface IAppStorageManager {
     fun <T> getUserId(): T
 
     fun <T> setUserId(id: T)
+
+    fun resetUserId()
+
+    fun removeAccessToken()
+
+    fun getMediaTempDirectoryPath(): String
 }

@@ -12,5 +12,5 @@ fun CharSequence?.getVisibility(hideView: Boolean = true): Int =
         else
             View.INVISIBLE
     } else {
-        View.INVISIBLE
+        View.VISIBLE
     }
