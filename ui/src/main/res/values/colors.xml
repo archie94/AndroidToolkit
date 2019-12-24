@@ -8,6 +8,11 @@
     <color name="color_transparent">#00000000</color>
 
     <color name="border_grey_1">#AFAFAF</color>
+    <color name="grey_medium">#f2f2f2</color>
+    <color name="light_gray">#f5f2f2f2</color>
     <color name="color_light_grey_with_alpha">#4befefef</color>
     <color name="color_text_grey">#5D5D67</color>
+    <color name="color_text_black">#030303</color>
+    <color name="color_red">#eb0909</color>
+
 </resources>

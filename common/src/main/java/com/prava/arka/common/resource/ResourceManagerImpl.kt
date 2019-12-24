@@ -6,8 +6,11 @@ import android.content.Context
  * Created by Arka Prava Basu <arkaprava94@gmail.com> on 24/9/19.
  */
 class ResourceManagerImpl(
-    private val context: Context
+    applicationContext: Context
 ) : IResourceManager {
+
+    private val context: Context = applicationContext.applicationContext
+
     override fun getString(id: Int): String = context.getString(id)
 
     override fun getString(id: Int, vararg obj: Any): String = context.getString(id, *obj)
