@@ -4,7 +4,7 @@ import android.app.Activity
 import androidx.appcompat.app.AlertDialog
 
 /**
- * Created by Arka Prava Basu<arka@ixigo.com> on 2019-12-01
+ * Created by Arka Prava Basu<arkaprava94@gmail.com> on 2019-12-01
  **/
 fun Activity.showAlertDialog(s: String) {
     AlertDialog.Builder(this)
