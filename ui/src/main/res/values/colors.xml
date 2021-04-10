@@ -1,18 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
-    <!-- From https://www.w3schools.com/colors/colors_names.asp -->
-    <color name="black">#000000</color>
-    <color name="grey">#808080</color>
+    <color name="uiColorPrimary">@color/schedule_start_color</color>
+    <color name="uiColorPrimaryDark">@color/schedule_end_color</color>
+    <color name="uiColorOnPrimary">@color/schedule_start_color</color>
+    <color name="uiColorPrimaryVariant">@color/schedule_start_color</color>
+    <color name="uiColorPrimarySurface">@color/schedule_start_color</color>
 
+    <color name="uiColorSecondary">@color/schedule_end_color</color>
+    <color name="uiColorSecondaryDark">@color/schedule_end_color</color>
+    <color name="uiColorOnSecondary">@color/schedule_end_color</color>
+    <color name="uiColorSecondaryVariant">@color/schedule_end_color</color>
+
+    <color name="uiColorBackground">@color/black</color>
+    <color name="uiColorSurface">@color/ui_dark_grey</color>
+
+    <color name="uiColorError">#B00020</color>
+
+    <color name="uiTextColorPrimary">@color/white</color>
+    <color name="uiTextColorPrimaryInverse">@color/black</color>
+    <color name="uiTextColorSecondary">#80FFFFFF</color>
+    <color name="uiTextColorSecondaryInverse">#80000000</color>
+
+    <color name="uiColorAccent">@color/white</color>
+
+    <color name="ui_dark_grey">#121212</color>
+    <color name="ui_color_bg_light">#21FFFFFF</color>
+    <color name="ui_icon_primary">#D8D8D8</color>
+    <color name="ui_icon_secondary">@color/uiTextColorSecondary</color>
+
+    <color name="ui_dialog_background">#212121</color>
+
+    <color name="ui_status_bar_color">#4D000000</color>
+    <color name="ui_navigation_bar_color">#4D000000</color>
+
+    <color name="ui_ripple_material_dark">#33ffffff</color>
+    <color name="ui_ripple_material_light">#1f000000</color>
+
+    <color name="search_et_border">#4DFFFFFF</color>
+    <color name="search_card_bg">#0FFFFFFF</color>
+
+    <color name="tab_button_bg">#33FFFFFF</color>
+    <color name="ui_list_item_bg">#101010</color>
+    <color name="ui_list_item_inverse">#0DFFFFFF</color>
+    <color name="image_button_bg_color">#0FFFFFFF</color>
+    <color name="image_overlay">#33000000</color>
+    <color name="image_overlay_darker">#4D000000</color>
+
+    <color name="mind_color">#0fe3e1</color>
+
+    <color name="schedule_start_color">#fa74ff</color>
+    <color name="schedule_end_color">#4d269b</color>
+
+    <color name="sleep_start_color">#fa74ff</color>
+    <color name="sleep_end_color">#4d269b</color>
+
+    <color name="body_start_color">#ffee00</color>
+    <color name="body_end_color">#ff016f</color>
+
+    <color name="program_button_stroke_color">#19191C</color>
+    <color name="program_button_transparent_stroke">#99FFFFFF</color>
+    <color name="program_button_start_color">#c932ff</color>
+    <color name="program_button_end_color">#6901ff</color>
+
+    <!--<color name="progress_primary">#fff</color>-->
+    <color name="progress_primary">@color/white</color>
+    <color name="progress_secondary">@color/gray_scale</color>
+    <color name="progress_max_active">@color/white</color>
+
+    <color name="gray_scale">#80FFFFFF</color>
+    <color name="program_card_border">#26FFFFFF</color>
+
+    <color name="progress_bar_background">#1CFFFFFF</color>
+    <color name="dark_gradient_start">#040404</color>
+    <color name="dark_gradient_end">#00040404</color>
+
+    <color name="program_tab_background">#D9000000</color>
+    <color name="profile_gradient_end">#0AFFFFFF</color>
+    <color name="profile_gradient_start">#00FFFFFF</color>
+
+    <color name="switch_thumb_disabled">@color/ui_icon_primary</color>
+    <color name="switch_stick_disabled">@color/ui_icon_secondary</color>
     <color name="color_transparent">#00000000</color>
-
-    <color name="border_grey_1">#AFAFAF</color>
-    <color name="grey_medium">#f2f2f2</color>
-    <color name="light_gray">#f5f2f2f2</color>
-    <color name="color_light_grey_with_alpha">#4befefef</color>
-    <color name="color_text_grey">#5D5D67</color>
-    <color name="color_text_black">#030303</color>
-    <color name="color_red">#eb0909</color>
-
 </resources>

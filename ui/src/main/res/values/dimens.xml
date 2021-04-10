@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="border_smallest">8dp</dimen>
+    <dimen name="border_smaller">12dp</dimen>
+    <dimen name="border_small">16dp</dimen>
+    <dimen name="border_regular">20dp</dimen>
+    <dimen name="border_big">24dp</dimen>
+    <dimen name="border_bigger">32dp</dimen>
+    <dimen name="border_large">48dp</dimen>
+    <dimen name="border_76">76dp</dimen>
+
+    <dimen name="padding_button">18dp</dimen>
+
+    <dimen name="corner_radius_tiny">2dp</dimen>
+    <dimen name="corner_radius_small">4dp</dimen>
+    <dimen name="corner_radius_regular">8dp</dimen>
+    <dimen name="corner_radius_big">16dp</dimen>
+
+    <dimen name="program_card_height">502dp</dimen>
+
+    <dimen name="image_size_tiny">8dp</dimen>
+    <dimen name="image_size_small">24dp</dimen>
+    <dimen name="image_size_regular">32dp</dimen>
+    <dimen name="image_size_big">56dp</dimen>
+    <dimen name="image_size_instructor">192dp</dimen>
+    <dimen name="image_size_avatar">138dp</dimen>
+
+    <dimen name="avatar_bg_inner_radius">70dp</dimen>
+    <dimen name="avatar_bg_ring_thickness">2dp</dimen>
+
+    <dimen name="image_search_height">90dp</dimen>
+    <dimen name="image_search_width">51dp</dimen>
+
+    <dimen name="search_layout_height">36dp</dimen>
+    <dimen name="search_et_border">1dp</dimen>
+    <dimen name="player_play_pause_size">90dp</dimen>
+    <dimen name="player_misc_control_size">22dp</dimen>
+
+    <dimen name="tab_button_height">32dp</dimen>
+    <dimen name="bottom_nav_icon_size">24dp</dimen>
+    <dimen name="bottom_nav_elevation">6dp</dimen>
+    <dimen name="bottom_nav_height">56dp</dimen>
+
+    <dimen name="fab_elevation">4dp</dimen>
+    <dimen name="text_padding_top_bottom">6dp</dimen>
+
+    <dimen name="progress_bar_size_tiny">16dp</dimen>
+    <dimen name="progress_bar_size">32dp</dimen>
+    <dimen name="progress_bar_size_big">54dp</dimen>
+
+    <dimen name="mini_program_card_width">192dp</dimen>
+    <dimen name="mini_program_card_height">339dp</dimen>
+    <dimen name="profile_summary_chart_height">417dp</dimen>
+
+    <dimen name="elevation_regular">4dp</dimen>
+
+    <dimen name="dummy_space_height">80dp</dimen>
+    <dimen name="circular_image_button_height">40dp</dimen>
+    <dimen name="circular_image_button_height_big">50dp</dimen>
+    <dimen name="circular_image_button_height_bigger">75dp</dimen>
+    <dimen name="button_stroke_width">0.5dp</dimen>
+    <dimen name="button_transparent_stroke_width">0.5dp</dimen>
+    <dimen name="button_corner_radius">32dp</dimen>
+
+    <dimen name="stories_progress_bar_height">4dp</dimen>
+
+
+    <dimen name="instructor_circle_inner_radius">99dp</dimen>
+    <dimen name="instructor_circle_border_thickness">1dp</dimen>
+    <dimen name="instructor_image_padding">4dp</dimen>
+    <dimen name="leaderboard_image_border_thickness">2dp</dimen>
+    <dimen name="activity_ring_container_size">45dp</dimen>
+    <dimen name="activity_ring_group_width">85dp</dimen>
+    <dimen name="activity_ring_group_height">77dp</dimen>
+
+    <dimen name="bubble_vr_height">300dp</dimen>
+    <dimen name="bubble_regular">69dp</dimen>
+    <dimen name="bubble_large">89dp</dimen>
+
+    <item name="text_body_letter_spacing_1px" format="float" type="dimen">0.07142857143</item>
+
+    <dimen name="roundedTextBorderRadius">4dp</dimen>
+    <dimen name="roundedTextBorderWidth">1dp</dimen>
+</resources>

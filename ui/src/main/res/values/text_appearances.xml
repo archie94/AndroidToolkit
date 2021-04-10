@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text styles -->
+    <style name="BaseText">
+        <item name="fontFamily">@font/open_sans_light</item>
+        <item name="android:fontFamily">@font/open_sans_light</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">0dp</item>
+    </style>
+
+    <style name="BaseText.BigBanner">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/big_banner</item>
+        <item name="android:fontFamily">@font/open_sans_light</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+
+    <style name="BaseText.BigBanner.ExtraBoldItalic">
+        <item name="android:fontFamily">@font/open_sans_extrabold_italic</item>
+        <item name="fontFamily">@font/open_sans_extrabold_italic</item>
+    </style>
+
+    <style name="BaseText.Title">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textSize">@dimen/title</item>
+    </style>
+
+    <style name="BaseText.Title.SemiBold">
+        <item name="fontFamily">@font/open_sans_semibold</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+    <style name="BaseText.Title.Bold">
+        <item name="fontFamily">@font/open_sans_bold</item>
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+    </style>
+
+    <style name="BaseText.ContentTitle">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/content_title</item>
+    </style>
+
+    <style name="BaseText.ContentTitle.Regular">
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="BaseText.ContentTitle.Bold">
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+
+    <style name="BaseText.ContentTitle.Bold.Secondary">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="BaseText.ContentTitle.ExtraBold">
+        <item name="android:fontFamily">@font/open_sans_extrabold</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+
+    <style name="BaseText.ContentTitle.ExtraBoldItalic">
+        <item name="android:fontFamily">@font/open_sans_extrabold_italic</item>
+        <item name="fontFamily">@font/open_sans_extrabold_italic</item>
+    </style>
+
+    <style name="BaseText.ContentTitle.ExtraBoldItalic.Secondary">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="BaseText.Header">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/header</item>
+    </style>
+
+    <style name="BaseText.Header.Bold">
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+
+    <style name="BaseText.Header.ExtraBold">
+        <item name="android:fontFamily">@font/open_sans_extrabold</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+
+    <style name="BaseText.Banner">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/banner</item>
+        <item name="android:fontFamily">@font/open_sans_light</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+
+    <style name="BaseText.Banner.Regular">
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="BaseText.Banner.Bold">
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+
+    <style name="BaseText.Banner.ExtraBold">
+        <item name="android:fontFamily">@font/open_sans_extrabold</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+
+    <style name="BaseText.Banner.ExtraBoldItalic">
+        <item name="android:fontFamily">@font/open_sans_extrabold_italic</item>
+        <item name="fontFamily">@font/open_sans_extrabold_italic</item>
+    </style>
+
+    <style name="BaseText.Body">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/body</item>
+        <item name="android:letterSpacing">-0.015625</item>
+    </style>
+
+    <style name="BaseText.Body.Regular">
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="BaseText.Body.Bold">
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+
+    <style name="BaseText.Body.Bold.Secondary">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="BaseText.Body.SemiBold">
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+    <style name="BaseText.Body.SemiBold.Secondary">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="BaseText.SingleLineText">
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+
+    <style name="BaseBlendText" parent="BaseText.SingleLineText">
+
+    </style>
+
+    <style name="HeaderBlendText" parent="BaseBlendText">
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/banner</item>
+    </style>
+
+    <style name="TitleBlendText" parent="BaseBlendText">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/big_text</item>
+    </style>
+
+    <style name="BodyBlendText" parent="BaseBlendText">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/regular_text</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.BigBanner">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/big_banner</item>
+        <item name="android:fontFamily">@font/open_sans_light</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.BigBanner.Bold">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/big_banner</item>
+        <item name="android:fontFamily">@font/open_sans_extrabold</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.BigBanner.BoldItalic">
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/big_banner</item>
+        <item name="android:fontFamily">@font/open_sans_extrabold_italic</item>
+        <item name="fontFamily">@font/open_sans_extrabold_italic</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Banner">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/banner</item>
+        <item name="android:fontFamily">@font/open_sans_light</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Banner.Subtitle">
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:fontFamily">@font/open_sans_extrabold_italic</item>
+        <item name="fontFamily">@font/open_sans_extrabold_italic</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Banner.ExtraBold">
+        <item name="android:fontFamily">@font/open_sans_extrabold</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Banner.ExtraBoldItalic">
+        <item name="android:fontFamily">@font/open_sans_extrabold_italic</item>
+        <item name="fontFamily">@font/open_sans_extrabold_italic</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Header">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/header</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Header.Light">
+        <item name="android:fontFamily">@font/open_sans_light</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Header.ExtraBold">
+        <item name="android:fontFamily">@font/open_sans_extrabold</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Header.ExtraBoldItalic">
+        <item name="android:fontFamily">@font/open_sans_extrabold_italic</item>
+        <item name="fontFamily">@font/open_sans_extrabold_italic</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Header.ExtraBoldItalic.Secondary">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Body">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/body</item>
+        <item name="android:letterSpacing">-0.015625</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Body.Regular">
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Body.Light">
+        <item name="android:fontFamily">@font/open_sans_light</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Body.Regular.Secondary">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Body.Tab">
+        <item name="android:textColor">@color/ui_tab_color</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Body.Bold.Tab">
+        <item name="android:letterSpacing">0.0</item>
+        <item name="android:textColor">@color/ui_tab_color</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Body.Title">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Body.SemiBold">
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Body.SemiBold.Secondary">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Body.Title.Bold">
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/open_sans_extrabold</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Body.Title.Bold.Secondary">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Body.BoldItalic">
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/open_sans_extrabold_italic</item>
+        <item name="fontFamily">@font/open_sans_extrabold_italic</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Body.ExtraBold">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/open_sans_extrabold</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Body.ExtraBoldItalic">
+        <item name="android:fontFamily">@font/open_sans_extrabold_italic</item>
+        <item name="fontFamily">@font/open_sans_extrabold_italic</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Body.ExtraBold.Secondary">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Body.Bold">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Body.Bold.Secondary">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Body.Bold.Title">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Body.Bold.Title.Secondary">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Title">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/title</item>
+        <item name="android:letterSpacing">-0.015625</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Title.Secondary">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Title.Regular">
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Title.SemiBold">
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Title.SemiBold.Secondary">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Title.Bold">
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Title.Bold.Secondary">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Title.BoldItalic">
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/open_sans_extrabold_italic</item>
+        <item name="fontFamily">@font/open_sans_extrabold_italic</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.Title.ExtraBoldItalic">
+        <item name="android:fontFamily">@font/open_sans_extrabold_italic</item>
+        <item name="fontFamily">@font/open_sans_extrabold_italic</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.ContentTitle">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/content_title</item>
+        <item name="android:letterSpacing">-0.015625</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.ContentTitle.Regular">
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.ContentTitle.Bold">
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.ContentTitle.SemiBold">
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.ContentTitle.Bold.Secondary">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.ContentTitle.ExtraBold">
+        <item name="android:fontFamily">@font/open_sans_extrabold</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.ContentTitle.ExtraBoldItalic">
+        <item name="android:fontFamily">@font/open_sans_extrabold_italic</item>
+        <item name="fontFamily">@font/open_sans_extrabold_italic</item>
+    </style>
+
+    <style name="BaseText.SingleLineText.ContentTitle.ExtraBoldItalic.Secondary">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="BaseText.BlackShadowText">
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">10.0</item>
+        <item name="android:shadowDy">10.0</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="BaseText.BlackShadowText.Banner">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/banner</item>
+        <item name="android:fontFamily">@font/open_sans_light</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+
+    <style name="BaseText.BlackShadowText.Banner.ExtraBold">
+        <item name="android:fontFamily">@font/open_sans_extrabold</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+
+    <style name="BaseText.BlackShadowText.SingleLineText">
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+
+    <style name="BaseText.BlackShadowText.SingleLineText.Banner">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/banner</item>
+        <item name="android:fontFamily">@font/open_sans_light</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+
+    <style name="BaseText.BlackShadowText.SingleLineText.Banner.ExtraBold">
+        <item name="android:fontFamily">@font/open_sans_extrabold</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+
+    <style name="BaseText.BlackShadowText.SingleLineText.Header">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/header</item>
+        <item name="android:fontFamily">@font/open_sans_light</item>
+        <item name="fontFamily">@font/open_sans_light</item>
+    </style>
+
+    <style name="BaseText.BlackShadowText.SingleLineText.Header.ExtraBold">
+        <item name="android:fontFamily">@font/open_sans_extrabold</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+
+    <style name="BaseText.BlackShadowText.SingleLineText.Body">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/body</item>
+        <item name="android:letterSpacing">-0.015625</item>
+    </style>
+
+    <style name="BaseText.BlackShadowText.SingleLineText.Body.ExtraBold">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/open_sans_extrabold</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+
+    <!-- deprecated -->
+    <style name="BodyTitle" parent="BaseText.SingleLineText">
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/body_title</item>
+        <item name="android:letterSpacing">-0.015625</item>
+        <item name="android:fontFamily">@font/open_sans_extrabold_italic</item>
+        <item name="fontFamily">@font/open_sans_extrabold_italic</item>
+    </style>
+
+    <!-- deprecated -->
+    <style name="Body" parent="BaseText.SingleLineText">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/body1</item>
+        <item name="android:letterSpacing">-0.015625</item>
+    </style>
+
+    <!-- deprecated -->
+    <style name="Body2" parent="BaseText.SingleLineText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/body2</item>
+        <item name="android:letterSpacing">-0.015625</item>
+        <item name="android:fontFamily">@font/open_sans_extrabold</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+
+    <!-- deprecated -->
+    <style name="Body2.Grey" parent="Body2">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <!-- deprecated -->
+    <style name="BodySmall1" parent="BaseText.SingleLineText">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/body_small</item>
+        <item name="android:letterSpacing">-0.015625</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+</resources>

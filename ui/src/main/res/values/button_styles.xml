@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Button styles -->
+    <style name="ButtonBodyExtraBold">
+        <item name="android:textAppearance">@style/BaseText.SingleLineText.Body.ExtraBold</item>
+        <item name="android:fontFamily">@font/open_sans_extrabold</item>
+        <item name="fontFamily">@font/open_sans_extrabold</item>
+    </style>
+
+    <style name="ButtonBodyExtraBold.TextButton">
+        <item name="android:paddingLeft">@dimen/border_small</item>
+        <item name="android:paddingRight">@dimen/border_small</item>
+        <item name="android:paddingTop">@dimen/border_smallest</item>
+        <item name="android:paddingBottom">@dimen/border_smallest</item>
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="ButtonBodyExtraBold.TextButton.Secondary">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+</resources>

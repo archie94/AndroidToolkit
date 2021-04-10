@@ -1,0 +1,209 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. We only support Dark mode for now -->
+    <style name="UiSdkTheme" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimary">@color/uiColorPrimary</item>
+        <item name="colorPrimaryDark">@color/uiColorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/uiColorOnPrimary</item>
+        <item name="colorPrimaryVariant">@color/uiColorPrimaryVariant</item>
+        <item name="colorPrimarySurface">@color/uiColorPrimarySurface</item>
+
+        <item name="colorSecondary">@color/uiColorSecondary</item>
+        <item name="colorSecondaryVariant">@color/uiColorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/uiColorOnSecondary</item>
+
+        <item name="colorAccent">@color/uiColorAccent</item>
+        <item name="colorControlHighlight">@color/ui_ripple_material_dark</item>
+        <item name="colorControlNormal">@color/ui_icon_primary</item>
+        <item name="colorControlActivated">?attr/colorAccent</item>
+
+        <item name="colorSurface">@color/uiColorSurface</item>
+
+        <item name="android:textColorPrimary">@color/uiTextColorPrimary</item>
+        <item name="android:textColorSecondary">@color/uiTextColorSecondary</item>
+        <item name="android:textColor">@color/uiTextColorPrimary</item>
+        <item name="android:textColorPrimaryInverse">@color/uiTextColorPrimaryInverse</item>
+        <item name="android:textColorSecondaryInverse">@color/uiTextColorSecondaryInverse</item>
+        <item name="android:editTextColor">@color/uiTextColorPrimary</item>
+        <item name="android:actionMenuTextColor">@color/uiTextColorPrimary</item>
+        <item name="actionMenuTextAppearance">@style/BaseText.SingleLineText.Body</item>
+        <item name="android:actionMenuTextAppearance">@style/BaseText.SingleLineText.Body</item>
+        <item name="android:textColorHint">@color/uiTextColorSecondary</item>
+
+        <item name="colorError">@color/uiColorError</item>
+        <item name="android:colorBackground">@color/uiColorBackground</item>
+
+        <item name="android:navigationBarColor">@color/uiColorBackground</item>
+        <item name="android:statusBarColor">@color/uiColorBackground</item>
+        <item name="android:windowBackground">@color/uiColorBackground</item>
+
+        <item name="ui_bg_color_list_item">@color/ui_list_item_bg</item>
+        <item name="ui_bg_color_list_item_inverse">@color/ui_list_item_inverse</item>
+        <item name="ui_icon_color">@color/ui_icon_primary</item>
+        <item name="ui_icon_color_secondary">@color/ui_icon_secondary</item>
+
+        <item name="android:fontFamily">@font/open_sans_light</item>
+        <item name="android:textViewStyle">@style/BaseText</item>
+
+        <!-- Need to check if this is costly -->
+        <item name="android:windowContentTransitions">true</item>
+
+        <item name="actionBarStyle">@style/ThemeOverlay.AppCompat.UiActionBar</item>
+    </style>
+
+    <style name="UiSdkTheme.NoNavigationBar">
+        <item name="android:navigationBarColor">@color/transparent</item>
+    </style>
+
+    <style name="UiSdkTheme.NoActionBar" parent="UiSdkTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="UiSdkTheme.NoActionBar.NoNavigationBar">
+        <item name="android:navigationBarColor">@color/transparent</item>
+    </style>
+
+    <style name="UiSdkTheme.NoActionBar.EdgeToEdge" parent="UiSdkTheme.NoActionBar">
+        <item name="android:navigationBarColor">@color/ui_navigation_bar_color</item>
+        <item name="android:statusBarColor">@color/ui_status_bar_color</item>
+    </style>
+
+    <style name="UiSdkTheme.NoActionBar.EdgeToEdge.ImmersiveCutout">
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="o_mr1">
+            shortEdges <!-- default, shortEdges, never -->
+        </item>
+    </style>
+
+    <!-- Transparent window activity -->
+    <style name="UiSdkTheme.NoActionBar.EdgeToEdge.ImmersiveCutout.Transparent">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- Edit text styles -->
+    <style name="SearchEditText1" parent="Body">
+        <item name="android:background">@null</item>
+    </style>
+
+    <!-- Toolbar / ActionBar -->
+    <style name="ThemeOverlay.AppCompat.UiActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:background">@color/uiColorBackground</item>
+        <item name="android:elevation">0dp</item> <!-- Have this in the parent theme -->
+        <item name="actionMenuTextColor">@color/uiTextColorPrimary</item>
+        <item name="titleTextStyle">@style/BaseText.SingleLineText.Body</item>
+    </style>
+
+    <style name="ThemeOverlay.AppCompat.UiActionBar.Transparent">
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="ThemeOverlay.AppCompat.UiActionBar.Transparent.CenterAligned">
+        <item name="android:gravity">center</item>
+        <!--        <item name="actionOverflowButtonStyle">@style/ActionButtonOverflowStyle</item>-->
+        <!--        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>-->
+    </style>
+
+    <!-- Bottom Nav -->
+    <style name="BottomNavigation">
+        <item name="enforceTextAppearance">true</item>
+        <item name="enforceMaterialTheme">false</item>
+        <item name="android:background">@color/black</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="itemHorizontalTranslationEnabled">false</item>
+        <item name="itemIconTint">@color/ui_bottom_nav_icon_color</item>
+        <item name="itemTextAppearanceInactive">?attr/textAppearanceCaption</item>
+        <item name="itemTextAppearanceActive">?attr/textAppearanceCaption</item>
+        <item name="itemTextColor">@color/uiTextColorPrimary</item>
+        <item name="itemRippleColor">@color/ui_bottom_nav_item_ripple</item>
+        <item name="elevation">@dimen/bottom_nav_elevation</item>
+        <item name="itemBackground">?attr/selectableItemBackgroundBorderless</item>
+        <item name="itemIconSize">@dimen/bottom_nav_icon_size</item>
+        <item name="labelVisibilityMode">unlabeled</item>
+    </style>
+
+    <!-- FAB -->
+    <style name="FAB" parent="Widget.Design.FloatingActionButton">
+        <item name="android:background">@drawable/design_fab_background</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="fabSize">auto</item>
+        <item name="elevation">@dimen/fab_elevation</item>
+        <item name="hoveredFocusedTranslationZ">@dimen/design_fab_translation_z_hovered_focused
+        </item>
+        <item name="pressedTranslationZ">@dimen/design_fab_translation_z_pressed</item>
+        <item name="rippleColor">?attr/colorControlHighlight</item>
+        <item name="borderWidth">@dimen/design_fab_border_width</item>
+        <item name="maxImageSize">@dimen/design_fab_image_size</item>
+        <item name="showMotionSpec">@animator/design_fab_show_motion_spec</item>
+        <item name="hideMotionSpec">@animator/design_fab_hide_motion_spec</item>
+    </style>
+
+    <!-- Media button -->
+    <style name="MediaButton">
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <!-- Bottom Sheet -->
+    <style name="TransparentBackgroundBottomSheetDialogTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/TransparentBackgroundBottomSheetStyle</item>
+        <item name="android:colorBackground">@color/uiColorBackground</item>
+    </style>
+
+    <style name="UiBottomSheet" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/TransparentBackgroundBottomSheetStyle</item>
+        <item name="android:colorBackground">@color/uiColorBackground</item>
+    </style>
+
+    <style name="UiBottomSheet.NonFloating">
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="UiBottomSheet.NonDismissibleInteractiveBackground">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.0</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="UiBottomSheet.DismissibleDimBackground">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="TransparentBackgroundBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- Switch -->
+    <style name="ThemeOverlay.SwitchCompat" parent="">
+        <item name="colorControlActivated">?attr/colorPrimary</item>
+        <item name="colorSwitchThumbNormal">@color/switch_thumb_disabled</item>
+        <item name="android:colorForeground">@color/switch_stick_disabled</item>
+    </style>
+
+    <style name="RoundedBgTextView" parent="@android:style/Widget.TextView">
+        <item name="roundedTextHorizontalPadding">2dp</item>
+        <item name="roundedTextVerticalPadding">2dp</item>
+        <item name="roundedTextDrawable">@color/black</item>
+        <item name="roundedTextDrawableLeft">@color/black</item>
+        <item name="roundedTextDrawableMid">@color/black</item>
+        <item name="roundedTextDrawableRight">@color/black</item>
+    </style>
+</resources>
