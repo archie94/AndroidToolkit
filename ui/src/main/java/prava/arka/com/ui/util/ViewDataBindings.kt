@@ -2,6 +2,7 @@ package prava.arka.com.ui.util
 
 import android.app.Activity
 import android.content.res.ColorStateList
+import android.graphics.Bitmap
 import android.graphics.LinearGradient
 import android.graphics.Outline
 import android.graphics.Shader
@@ -53,6 +54,13 @@ fun ImageView.setImgUrl(
         .fit()
         .centerCrop() // todo fix these approximations
         .into(this, callback)
+}
+
+@BindingAdapter("imgBmp")
+fun ImageView.setImgBmp(
+    bmp: Bitmap,
+) {
+    setImageBitmap(bmp)
 }
 
 @BindingAdapter("imgUri", "placeholder", requireAll = false)
