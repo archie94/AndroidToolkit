@@ -137,6 +137,13 @@ fun ImageView.setImgUrlPostponeTransition(imgUrl: String?, @DrawableRes placeHol
         )
 }
 
+@BindingAdapter("imgIconOrUrl", "url")
+fun ImageView.setImgIconOrUrl(@DrawableRes icon: Int?, url: String?) {
+    icon?.let {
+        setImageResource(it)
+    } ?: setImgUrl(url, null)
+}
+
 @BindingAdapter("backgroundDrawableRes")
 fun View.setBackgroundDrawableRes(@DrawableRes backgroundDrawableRes: Int) {
     setBackgroundResource(backgroundDrawableRes)
