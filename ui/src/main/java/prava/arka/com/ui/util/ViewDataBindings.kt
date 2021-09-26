@@ -63,6 +63,15 @@ fun ImageView.setImgBmp(
     setImageBitmap(bmp)
 }
 
+@BindingAdapter("imgBmpSafe")
+fun ImageView.setImgBmpSafe(
+    bmp: Bitmap?,
+) {
+    bmp?.let {
+        setImageBitmap(it)
+    }
+}
+
 @BindingAdapter("imgUri", "placeholder", requireAll = false)
 fun ImageView.setImgUri(imgUri: Uri?, @DrawableRes placeHolder: Int?) {
     Picasso.get()
