@@ -1,6 +1,7 @@
 package com.arka.prava.util.utils
 
 import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.graphics.Matrix
 
 /**
@@ -13,4 +14,8 @@ fun Bitmap.flip(): Bitmap {
 
     // return transformed image
     return Bitmap.createBitmap(this, 0, 0, this.width, this.height, matrix, true)
+}
+
+fun ByteArray.toBitmap(): Bitmap? {
+    return BitmapFactory.decodeByteArray(this, 0, this.size)
 }
