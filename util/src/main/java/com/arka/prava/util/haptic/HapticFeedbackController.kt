@@ -39,8 +39,8 @@ class HapticFeedbackController(private val mContext: Context, lifecycleOwner: Li
     }
 
     /**
-	 * Call to setup the controller.
-	 */
+     * Call to setup the controller.
+     */
     private fun start() {
         if (hasVibratePermission(mContext)) {
             vibrator =
@@ -55,11 +55,11 @@ class HapticFeedbackController(private val mContext: Context, lifecycleOwner: Li
     }
 
     /**
-	 * Method to verify that vibrate permission has been granted.
-	 *
-	 * Allows users of the library to disabled vibrate support if desired.
-	 * @return true if Vibrate permission has been granted
-	 */
+     * Method to verify that vibrate permission has been granted.
+     *
+     * Allows users of the library to disabled vibrate support if desired.
+     * @return true if Vibrate permission has been granted
+     */
     private fun hasVibratePermission(context: Context): Boolean {
         val pm = context.packageManager
         val hasPerm =
@@ -68,17 +68,17 @@ class HapticFeedbackController(private val mContext: Context, lifecycleOwner: Li
     }
 
     /**
-	 * Call this when you don't need the controller anymore.
-	 */
+     * Call this when you don't need the controller anymore.
+     */
     private fun stop() {
         vibrator = null
         mContext.contentResolver.unregisterContentObserver(contentObserver)
     }
 
     /**
-	 * Try to vibrate. To prevent this becoming a single continuous vibration, nothing will
-	 * happen if we have vibrated very recently.
-	 */
+     * Try to vibrate. To prevent this becoming a single continuous vibration, nothing will
+     * happen if we have vibrated very recently.
+     */
     @RequiresPermission(Manifest.permission.VIBRATE)
     fun tryVibrate() {
         val vibrator = this.vibrator ?: kotlin.run {

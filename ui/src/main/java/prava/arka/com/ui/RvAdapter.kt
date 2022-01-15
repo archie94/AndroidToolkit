@@ -7,8 +7,8 @@ import androidx.recyclerview.widget.RecyclerView
 /**
  * Created by Arka Prava Basu <arkaprava94@gmail.com> on 17/12/18.
  */
-class RvAdapter<T : IRvData, VR: RvViewRenderer<in T>>(vrList: List<VR>)
-    : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class RvAdapter<T : IRvData, VR : RvViewRenderer<in T>>(vrList: List<VR>) :
+    RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private val vrMap: HashMap<Int, VR> = HashMap()
 

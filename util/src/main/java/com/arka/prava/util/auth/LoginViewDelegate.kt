@@ -26,8 +26,12 @@ class LoginViewDelegate(
 ) : LoginViewGrantCallback {
 
     private val facebookAuthHelper = FacebookAuthHelper()
-    private val googleAuthHelper = GoogleAuthHelper(activity.applicationContext, loginGrantCallback(
-        GrantType.GOOGLE))
+    private val googleAuthHelper = GoogleAuthHelper(
+        activity.applicationContext,
+        loginGrantCallback(
+            GrantType.GOOGLE
+        )
+    )
 
     fun facebookLogin() {
         facebookAuthHelper.login(activity, loginGrantCallback(GrantType.FACEBOOK))

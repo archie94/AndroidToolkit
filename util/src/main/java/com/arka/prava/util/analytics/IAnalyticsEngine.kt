@@ -8,7 +8,7 @@ interface IAnalyticsEngine : IAnalyticsTracker, AutoCloseable {
     fun getIdentifier(): AnalyticsEngineId
 
     /**
-	 * To be called on application create
-	 */
+     * To be called on application create
+     */
     fun init(context: Context, token: String?)
 }

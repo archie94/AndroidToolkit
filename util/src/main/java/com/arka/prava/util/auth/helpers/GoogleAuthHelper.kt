@@ -3,6 +3,12 @@ package com.arka.prava.util.auth.helpers
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
+import com.arka.prava.util.auth.LoginKit
+import com.arka.prava.util.auth.callbacks.LoginGrantCallback
+import com.arka.prava.util.auth.models.GrantType
+import com.arka.prava.util.auth.models.LoginError
+import com.arka.prava.util.auth.models.LoginErrorResult
+import com.arka.prava.util.auth.models.LoginRequestData
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -11,12 +17,6 @@ import com.google.android.gms.common.ConnectionResult
 import com.google.android.gms.common.GoogleApiAvailability
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
-import com.arka.prava.util.auth.LoginKit
-import com.arka.prava.util.auth.callbacks.LoginGrantCallback
-import com.arka.prava.util.auth.models.GrantType
-import com.arka.prava.util.auth.models.LoginError
-import com.arka.prava.util.auth.models.LoginErrorResult
-import com.arka.prava.util.auth.models.LoginRequestData
 
 /**
  * Created by Sidharth Sethia on 13/07/20.

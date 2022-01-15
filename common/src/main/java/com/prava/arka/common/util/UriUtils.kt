@@ -8,7 +8,6 @@ import android.os.Environment
 import android.provider.DocumentsContract
 import android.provider.MediaStore
 
-
 /**
  * Created by Arka Prava Basu <arkaprava94@gmail.com> on 13/10/19.
  */
@@ -21,7 +20,7 @@ fun Uri.getUriRealPath(ctx: Context): String? {
 private fun Uri.getUriRealPathAboveKitkat(ctx: Context): String? {
     val resolver = ctx.contentResolver
 
-    val ret : String? = if (this.isContentUri()) {
+    val ret: String? = if (this.isContentUri()) {
         if (isGooglePhotoDoc(this.authority)) {
             this.lastPathSegment
         } else {
@@ -64,7 +63,6 @@ private fun Uri.getUriRealPathAboveKitkat(ctx: Context): String? {
             } else {
                 null
             }
-
         } else if (isDownloadDoc(uriAuthority)) {
             // Build download uri.
             val downloadUri = Uri.parse("content://downloads/public_downloads")
@@ -74,7 +72,6 @@ private fun Uri.getUriRealPathAboveKitkat(ctx: Context): String? {
                 ContentUris.withAppendedId(downloadUri, java.lang.Long.valueOf(documentId))
 
             downloadUriAppendId.getImageRealPath(resolver, null)
-
         } else if (isExternalStoreDoc(uriAuthority)) {
             val idArr =
                 documentId.split(":".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
@@ -128,7 +125,6 @@ private fun Uri.isFileUri(): Boolean {
     }
     return ret
 }
-
 
 /* Check whether this document is provided by ExternalStorageProvider. */
 private fun isExternalStoreDoc(uriAuthority: String): Boolean {

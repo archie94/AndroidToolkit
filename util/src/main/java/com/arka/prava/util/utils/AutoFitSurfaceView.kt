@@ -37,12 +37,12 @@ class AutoFitSurfaceView @JvmOverloads constructor(
     private var aspectRatio = 0f
 
     /**
-	 * Sets the aspect ratio for this view. The size of the view will be
-	 * measured based on the ratio calculated from the parameters.
-	 *
-	 * @param width Camera resolution horizontal size
-	 * @param height Camera resolution vertical size
-	 */
+     * Sets the aspect ratio for this view. The size of the view will be
+     * measured based on the ratio calculated from the parameters.
+     *
+     * @param width Camera resolution horizontal size
+     * @param height Camera resolution vertical size
+     */
     fun setAspectRatio(width: Int, height: Int) {
         require(width > 0 && height > 0) { "Size cannot be negative" }
         aspectRatio = width.toFloat() / height.toFloat()

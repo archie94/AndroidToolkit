@@ -2,12 +2,6 @@ package com.arka.prava.util.auth.helpers
 
 import android.app.Activity
 import android.content.Intent
-import com.facebook.AccessToken
-import com.facebook.CallbackManager
-import com.facebook.FacebookCallback
-import com.facebook.FacebookException
-import com.facebook.login.LoginManager
-import com.facebook.login.LoginResult
 import com.arka.prava.util.auth.callbacks.LoginCallback
 import com.arka.prava.util.auth.callbacks.LoginGrantCallback
 import com.arka.prava.util.auth.models.GrantType
@@ -15,6 +9,12 @@ import com.arka.prava.util.auth.models.LoginError
 import com.arka.prava.util.auth.models.LoginErrorResult
 import com.arka.prava.util.auth.models.LoginPermissionError
 import com.arka.prava.util.auth.models.LoginRequestData
+import com.facebook.AccessToken
+import com.facebook.CallbackManager
+import com.facebook.FacebookCallback
+import com.facebook.FacebookException
+import com.facebook.login.LoginManager
+import com.facebook.login.LoginResult
 
 /**
  * Created by Sidharth Sethia on 10/07/20.

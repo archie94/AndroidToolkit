@@ -26,10 +26,12 @@ class RetrofitHelper {
                     val builder = Retrofit.Builder()
                         .baseUrl(NetworkKit.getInstance().getBaseUrl())
                         .addConverterFactory(GsonConverterFactory.create(gson))
-                        .client(if (BuildConfig.DEBUG)
-                            httpClient.addInterceptor(logging).build()
-                        else
-                            httpClient.build())
+                        .client(
+                            if (BuildConfig.DEBUG)
+                                httpClient.addInterceptor(logging).build()
+                            else
+                                httpClient.build()
+                        )
 
                     retrofit = builder.build()
                 }

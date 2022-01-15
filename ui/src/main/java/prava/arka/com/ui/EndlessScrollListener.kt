@@ -59,10 +59,12 @@ class EndlessScrollListener(
                 // get maximum element within the list
                 lastVisibleItemPosition = getLastVisibleItem(lastVisibleItemPositions)
             }
-            is GridLayoutManager -> lastVisibleItemPosition =
-                layoutManager.findLastVisibleItemPosition()
-            is LinearLayoutManager -> lastVisibleItemPosition =
-                layoutManager.findLastVisibleItemPosition()
+            is GridLayoutManager ->
+                lastVisibleItemPosition =
+                    layoutManager.findLastVisibleItemPosition()
+            is LinearLayoutManager ->
+                lastVisibleItemPosition =
+                    layoutManager.findLastVisibleItemPosition()
         }
 
         // If the total item count is zero and the previous isn't, assume the

@@ -16,6 +16,6 @@ interface IAlertViewModel {
 
 sealed class AlertType<T>
 
-class LoadingAlert<T>(val data: T): AlertType<T>()
+class LoadingAlert<T>(val data: T) : AlertType<T>()
 
-class MsgAlert<T>(val msg: T): AlertType<T>()
+class MsgAlert<T>(val msg: T) : AlertType<T>()
