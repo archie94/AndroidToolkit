@@ -89,15 +89,15 @@ class BorderedTextView : AppCompatTextView {
                     )
                 }
             }
-            if (a.hasValue(R.styleable.BorderedTextView_textBackground)) {
+            if (a.hasValue(R.styleable.BorderedTextView_borderTextBackground)) {
                 val background =
-                    a.getDrawable(R.styleable.BorderedTextView_textBackground)
+                    a.getDrawable(R.styleable.BorderedTextView_borderTextBackground)
                 if (background != null) {
                     setBackgroundDrawable(background)
                 } else {
                     setBackgroundColor(
                         a.getColor(
-                            R.styleable.BorderedTextView_textBackground,
+                            R.styleable.BorderedTextView_borderTextBackground,
                             -0x1000000
                         )
                     )
